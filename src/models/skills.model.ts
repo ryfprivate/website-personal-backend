@@ -22,13 +22,12 @@ export class Skills extends Entity {
   @property({
     type: 'string',
   })
-  logo?: string;
+  imgSrc?: string;
 
   @property({
     type: 'string',
   })
   desc?: string;
-
 
   constructor(data?: Partial<Skills>) {
     super(data);
