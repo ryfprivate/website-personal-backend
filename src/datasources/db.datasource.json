@@ -1,0 +1,11 @@
+{
+  "name": "db",
+  "connector": "mongodb",
+  "url": "mongodb://ray:ray123>@ds339648.mlab.com:39648/db-personal-website",
+  "host": "",
+  "port": 0,
+  "user": "",
+  "password": "",
+  "database": "",
+  "useNewUrlParser": true
+}
