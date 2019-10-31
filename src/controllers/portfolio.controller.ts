@@ -26,7 +26,7 @@ export class PortfolioController {
     public portfolioRepository : PortfolioRepository,
   ) {}
 
-  @post('/portfolios', {
+  @post('/portfolio', {
     responses: {
       '200': {
         description: 'Portfolio model instance',
@@ -50,7 +50,7 @@ export class PortfolioController {
     return this.portfolioRepository.create(portfolio);
   }
 
-  @get('/portfolios/count', {
+  @get('/portfolio/count', {
     responses: {
       '200': {
         description: 'Portfolio model count',
@@ -64,7 +64,7 @@ export class PortfolioController {
     return this.portfolioRepository.count(where);
   }
 
-  @get('/portfolios', {
+  @get('/portfolio', {
     responses: {
       '200': {
         description: 'Array of Portfolio model instances',
@@ -82,7 +82,7 @@ export class PortfolioController {
     return this.portfolioRepository.find(filter);
   }
 
-  @patch('/portfolios', {
+  @patch('/portfolio', {
     responses: {
       '200': {
         description: 'Portfolio PATCH success count',
@@ -104,7 +104,7 @@ export class PortfolioController {
     return this.portfolioRepository.updateAll(portfolio, where);
   }
 
-  @get('/portfolios/{id}', {
+  @get('/portfolio/{id}', {
     responses: {
       '200': {
         description: 'Portfolio model instance',
@@ -116,7 +116,7 @@ export class PortfolioController {
     return this.portfolioRepository.findById(id);
   }
 
-  @patch('/portfolios/{id}', {
+  @patch('/portfolio/{id}', {
     responses: {
       '204': {
         description: 'Portfolio PATCH success',
@@ -137,7 +137,7 @@ export class PortfolioController {
     await this.portfolioRepository.updateById(id, portfolio);
   }
 
-  @put('/portfolios/{id}', {
+  @put('/portfolio/{id}', {
     responses: {
       '204': {
         description: 'Portfolio PUT success',
@@ -151,7 +151,7 @@ export class PortfolioController {
     await this.portfolioRepository.replaceById(id, portfolio);
   }
 
-  @del('/portfolios/{id}', {
+  @del('/portfolio/{id}', {
     responses: {
       '204': {
         description: 'Portfolio DELETE success',
